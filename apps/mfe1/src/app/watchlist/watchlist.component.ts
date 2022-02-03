@@ -12,7 +12,7 @@ import {
   CustomEventConfig,
   MFE1Events,
 } from '../core/services/events-dispatcher/event-disptacher.constants';
-import { PollingService } from '../core/services/polling/polling.service';
+import { PollingService } from '@core/services/polling/polling.service';
 import { randomStockPriceGenerator } from '../mocks/stock-prices';
 import { MFE1State, selectUIWatchlist } from '../reducers';
 import { WATCHLIST_COL_DEFS } from './watchlist.constants';

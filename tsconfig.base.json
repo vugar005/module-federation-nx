@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      // Right now only when paths specified in base works.
+      "@core/*": ["apps/mfe1/src/app/core/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
