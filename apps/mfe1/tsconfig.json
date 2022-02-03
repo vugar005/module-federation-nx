@@ -21,7 +21,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      // This below line is replaced by tsconfig base. Should be opposite
       "@core/*": ["apps/mfe1/src/app/core/*"]
     }
   },

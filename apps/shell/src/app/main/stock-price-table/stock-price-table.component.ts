@@ -3,9 +3,9 @@ import { Store } from '@ngrx/store';
 import { combineLatest, defer, Observable, of, Subject, takeUntil } from 'rxjs';
 import { STOCK_PRICE_TABLE_COL_DEFS } from './stock-price-table.constants';
 import { selectPortfolioWatchlist } from '../../reducers';
-import { PollingService } from 'apps/shell/core/polling/polling.service';
-import { PortfolioActions } from 'apps/shell/core/actions';
-import { randomStockPriceGenerator } from 'apps/shell/core/mocks/stock-price';
+import { PollingService } from '@core/polling/polling.service';
+import { PortfolioActions } from '@core/actions';
+import { randomStockPriceGenerator } from '@core/mocks/stock-price';
 
 @Component({
   selector: 'shell-stock-price-table',

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit, VERSION } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { removeFromCart } from 'apps/shell/core/actions/cart.actions';
-import { CartItem } from 'apps/shell/core/reducers/cart.reducer';
+import { removeFromCart } from '@core/actions/cart.actions';
+import { CartItem } from '@core/reducers/cart.reducer';
 import { Subject, takeUntil } from 'rxjs';
 import { AppState, selectCartItems } from '../reducers';
 

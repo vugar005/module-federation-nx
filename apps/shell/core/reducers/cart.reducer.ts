@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { CartActions } from 'apps/shell/core/actions';
+import { CartActions } from '@core/actions';
 
 export const featureKey = 'cart';
 

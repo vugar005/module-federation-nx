@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { APP_KEY } from '../../../app.constants';
-import { CustomEventConfig } from './event-disptacher.constants';
+import { CustomEventConfig } from './event-dispatcher.constants';
 
 @Injectable({
   providedIn: 'root',

@@ -7,12 +7,12 @@ import {
 } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { combineLatest, defer, Observable, of, Subject, takeUntil } from 'rxjs';
-import { EventDispatcherService } from '../core/services/events-dispatcher/event-dispatcher.service';
+import { EventDispatcherService } from '@core/services/events-dispatcher';
 import {
   CustomEventConfig,
   MFE1Events,
-} from '../core/services/events-dispatcher/event-disptacher.constants';
-import { PollingService } from '@core/services/polling/polling.service';
+} from '@core/services/events-dispatcher';
+import { PollingService } from '@core/services/polling';
 import { randomStockPriceGenerator } from '../mocks/stock-prices';
 import { MFE1State, selectUIWatchlist } from '../reducers';
 import { WATCHLIST_COL_DEFS } from './watchlist.constants';

@@ -19,6 +19,9 @@
           "apps/shell/src/styles.scss",
           "node_modules/bootstrap/dist/css/bootstrap.min.css"
         ],
+        "stylePreprocessorOptions": {
+          "includePaths": ["apps/shell/src/assets"]
+        },
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/shell/webpack.config.js"
