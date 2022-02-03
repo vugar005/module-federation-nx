@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "../../libs/shared/ui/src/lib/models/stock-price.model.ts"],
   "compilerOptions": {
     "types": ["jest", "node"]
   }

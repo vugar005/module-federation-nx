@@ -1,7 +1,6 @@
 import { createSelector, createFeatureSelector, Action, ActionReducerMap } from '@ngrx/store';
-
-import * as fromPortfolio from '@core/reducers/portfolio.reducer';
-import * as fromCart from '@core/reducers/cart.reducer';
+import * as fromPortfolio from '@shell/core/reducers/portfolio.reducer';
+import * as fromCart from '@shell/core/reducers/cart.reducer';
 import { InjectionToken } from '@angular/core';
 
 export interface AppState {

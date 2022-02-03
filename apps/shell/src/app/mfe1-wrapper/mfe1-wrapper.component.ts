@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { fromEvent, Observable, Subject, takeUntil } from 'rxjs';
 import { registry } from '../registry';
 import { selectPortfolioWatchlist } from '../reducers';
-import { CartActions } from '@core/actions';
+import { CartActions } from '@shell/core/actions';
 
 @Component({
   selector: 'shell-mfe1-wrapper',
