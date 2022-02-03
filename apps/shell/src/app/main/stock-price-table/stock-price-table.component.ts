@@ -3,9 +3,8 @@ import { Store } from '@ngrx/store';
 import { combineLatest, defer, Observable, of, Subject, takeUntil } from 'rxjs';
 import { STOCK_PRICE_TABLE_COL_DEFS } from './stock-price-table.constants';
 import { selectPortfolioWatchlist } from '../../reducers';
-import { PollingService } from '@core/polling/polling.service';
-import { PortfolioActions } from '@core/actions';
-import { randomStockPriceGenerator } from '@core/mocks/stock-price';
+import { PortfolioActions } from '@shell/core/actions';
+import { PollingService, IStockPrice, randomStockPriceGenerator } from '@myorg/common-ui';
 
 @Component({
   selector: 'shell-stock-price-table',
@@ -16,7 +15,7 @@ import { randomStockPriceGenerator } from '@core/mocks/stock-price';
 export class StockPriceTableComponent implements OnInit, OnDestroy {
   public readonly columnDefs = STOCK_PRICE_TABLE_COL_DEFS;
   public stocks: string[] = ['SONY', 'MSFT', 'AAPL'];
-  public dataSource = [];
+  public dataSource: IStockPrice[] = [];
   public watchlist?: string[];
   public readonly onDestroy$ = new Subject<void>();
 

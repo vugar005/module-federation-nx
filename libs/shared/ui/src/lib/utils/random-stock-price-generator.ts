@@ -1,4 +1,4 @@
-import { IStockPrice } from '@core/models/stock-price.model';
+import { IStockPrice } from "@myorg/common-ui";
 
 export const randomStockPriceGenerator = (
   symbol: string,
