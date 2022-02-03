@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { PortfolioActions } from 'apps/shell/core/actions';
+import { PortfolioActions } from '@core/actions';
 
 export const featureKey = 'portfolio';
 

@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { UIActions } from './core/actions';
+import { UIActions } from '@core/actions';
 
 @Component({
   selector: 'mfe1-root',

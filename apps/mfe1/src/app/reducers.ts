@@ -1,8 +1,8 @@
 import { createSelector, Action, ActionReducerMap } from '@ngrx/store';
 
-import * as fromUI from './core/reducers/ui.reducer';
+import * as fromUI from '@core/reducers/ui.reducer';
 import { InjectionToken } from '@angular/core';
-import { UIState } from './core/reducers/ui.reducer';
+import { UIState } from '@core/reducers/ui.reducer';
 
 export interface MFE1State {
   [fromUI.featureKey]: fromUI.UIState;
