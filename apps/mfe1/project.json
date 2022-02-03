@@ -15,7 +15,7 @@
         "tsConfig": "apps/mfe1/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/mfe1/src/favicon.ico", "apps/mfe1/src/assets"],
-        "styles": ["apps/mfe1/src/styles.scss"],
+        "styles": ["apps/mfe1/src/mfe1-global-styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/mfe1/webpack.config.js"

@@ -44,42 +44,31 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      remotes: {},
-      shared: share({
-        '@angular/core': {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        '@angular/common': {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        '@angular/common/http': {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        '@angular/router': {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        rxjs: {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        ...sharedMappings.getDescriptors(),
-      }),
       library: {
         type: 'module',
+      },
+      remotes: {
+        "mfe1": "http://localhost:4201/remoteEntry.js",
+    },
+      shared: {
+      // Angular
+      "@angular/core": { requiredVersion: '13.2.0' },
+      "@angular/common": { requiredVersion: '13.2.0' },
+      "@angular/common/http": { requiredVersion: '13.2.0' },
+      "@angular/router": { requiredVersion: '13.2.0' },
+      "@angular/platform-browser": {requiredVersion: '13.2.0' },
+      "@angular/platform-browser/animations": {requiredVersion: '13.2.0' },
+      // RxJs
+      "rxjs": { requiredVersion: '7.4.0' },
+      "rxjs/operators": { requiredVersion: '7.4.0' },
+      // Material
+      "@angular/cdk": {requiredVersion: '13.2.0' },
+      "@angular/material/table": {requiredVersion: '13.2.0' },
+      "@angular/material/list": {requiredVersion: '13.2.0' },
+      "@angular/material/icon": {requiredVersion: '13.2.0' },
+      "@angular/material/badge": {requiredVersion: '13.2.0' },
+      "@angular/material/menu": {requiredVersion: '13.2.0' },
+      "@angular/material/button": {requiredVersion: '13.2.0' },
       },
     }),
     sharedMappings.getPlugin(),
