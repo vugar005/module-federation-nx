@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { IStockPrice } from '../../../../../../../libs/shared/ui/src/lib/models/stock-price.model';
+import { IStockPrice } from '@myorg/common-ui';
 
 @Injectable({ providedIn: 'root' })
 export class StocksService {
