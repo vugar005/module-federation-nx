@@ -15,9 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@myorg/common-ui": ["libs/shared/ui/src/index.ts"],
-      "@shell/core/*": ["apps/shell/src/app/core/*"],
-      "@mfe1/core/*": ["apps/mfe1/src/app/core/*"]
+      "@mfe1/core/*": ["apps/mfe1/src/app/core/*"],
+      "@myorg/common-ui": ["libs/shared/common-ui/src/index.ts"],
+      "@shell/core/*": ["apps/shell/src/app/core/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
